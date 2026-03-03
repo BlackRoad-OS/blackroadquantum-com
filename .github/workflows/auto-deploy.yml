@@ -69,7 +69,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy .next --project-name=${{ github.event.repository.name }}
+          command: pages deploy out --project-name=${{ github.event.repository.name }}
 
   deploy-railway:
     name: Deploy to Railway
