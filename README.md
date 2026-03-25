@@ -1,139 +1,48 @@
-# BlackRoad Quantum
+<!-- BlackRoad SEO Enhanced -->
 
-> Next-generation quantum computing platform for enterprise AI applications.
-> **Live:** [blackroadquantum.com](https://blackroadquantum.com)
+# ulackroadquantum com
 
----
+> Part of **[BlackRoad OS](https://blackroad.io)** — Sovereign Computing for Everyone
 
-## 🌌 About BlackRoad OS, Inc.
+[![BlackRoad OS](https://img.shields.io/badge/BlackRoad-OS-ff1d6c?style=for-the-badge)](https://blackroad.io)
+[![BlackRoad OS](https://img.shields.io/badge/Org-BlackRoad-OS-2979ff?style=for-the-badge)](https://github.com/BlackRoad-OS)
+[![License](https://img.shields.io/badge/License-Proprietary-f5a623?style=for-the-badge)](LICENSE)
 
-**BlackRoad OS** is an AI operating layer above Google, OpenAI, Anthropic, and every other AI vendor — unifying them under a single, operator-controlled interface managed by **Alexa Amundson (CEO)**.
+**ulackroadquantum com** is part of the **BlackRoad OS** ecosystem — a sovereign, distributed operating system built on edge computing, local AI, and mesh networking by **BlackRoad OS, Inc.**
 
-| Dimension | Details |
-|-----------|---------|
-| Core Product | Unified AI API layer with vendor-agnostic routing |
-| Purpose | Manage AI model memory and continuity across models |
-| Scale | 30,000 AI agents + 30,000 human employees |
-| Infra | 578+ repositories across 15 specialized organizations |
-| Operator | Alexa Amundson (CEO & sole operator) |
-| Routing | All traffic routes through BlackRoad infra only |
+## About BlackRoad OS
 
----
+BlackRoad OS is a sovereign computing platform that runs AI locally on your own hardware. No cloud dependencies. No API keys. No surveillance. Built by [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc), a Delaware C-Corp founded in 2025.
 
-## 📦 Products
+### Key Features
+- **Local AI** — Run LLMs on Raspberry Pi, Hailo-8, and commodity hardware
+- **Mesh Networking** — WireGuard VPN, NATS pub/sub, peer-to-peer communication
+- **Edge Computing** — 52 TOPS of AI acceleration across a Pi fleet
+- **Self-Hosted Everything** — Git, DNS, storage, CI/CD, chat — all sovereign
+- **Zero Cloud Dependencies** — Your data stays on your hardware
 
-| Product | Domain | Description |
-|---------|--------|-------------|
-| BlackRoad OS | [blackroad.io](https://blackroad.io) | Core AI operating layer |
-| BlackRoad Quantum | [blackroadquantum.com](https://blackroadquantum.com) | Quantum computing infrastructure |
-| Lucidia | [lucidia.earth](https://lucidia.earth) | AI consciousness & memory system |
-| BlackRoad Systems | [blackroad.systems](https://blackroad.systems) | Infrastructure & DevOps |
-| Research | [blackroadquantum.info](https://blackroadquantum.info) | Quantum research portal |
-| Shop | [blackroadquantum.shop](https://blackroadquantum.shop) | Products & licensing |
+### The BlackRoad Ecosystem
+| Organization | Focus |
+|---|---|
+| [BlackRoad OS](https://github.com/BlackRoad-OS) | Core platform and applications |
+| [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc) | Corporate and enterprise |
+| [BlackRoad AI](https://github.com/BlackRoad-AI) | Artificial intelligence and ML |
+| [BlackRoad Hardware](https://github.com/BlackRoad-Hardware) | Edge hardware and IoT |
+| [BlackRoad Security](https://github.com/BlackRoad-Security) | Cybersecurity and auditing |
+| [BlackRoad Quantum](https://github.com/BlackRoad-Quantum) | Quantum computing research |
+| [BlackRoad Agents](https://github.com/BlackRoad-Agents) | Autonomous AI agents |
+| [BlackRoad Network](https://github.com/BlackRoad-Network) | Mesh and distributed networking |
+| [BlackRoad Education](https://github.com/BlackRoad-Education) | Learning and tutoring platforms |
+| [BlackRoad Labs](https://github.com/BlackRoad-Labs) | Research and experiments |
+| [BlackRoad Cloud](https://github.com/BlackRoad-Cloud) | Self-hosted cloud infrastructure |
+| [BlackRoad Forge](https://github.com/BlackRoad-Forge) | Developer tools and utilities |
 
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Node.js 20+
-- npm 10+
-- Cloudflare account (for deployment)
-
-### Local Development
-
-```bash
-git clone https://github.com/BlackRoad-OS/blackroadquantum-com.git
-cd blackroadquantum-com
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-### Production Build
-
-```bash
-npm run build      # outputs to /out (static export)
-```
-
-### Deploy to Cloudflare Pages
-
-```bash
-npx wrangler pages deploy out --project-name=blackroadquantum-com
-```
+### Links
+- **Website**: [blackroad.io](https://blackroad.io)
+- **Documentation**: [docs.blackroad.io](https://docs.blackroad.io)
+- **Chat**: [chat.blackroad.io](https://chat.blackroad.io)
+- **Search**: [search.blackroad.io](https://search.blackroad.io)
 
 ---
 
-## 🔐 Authentication (OATH / OAuth)
 
-Authentication is handled via **Cloudflare Access** — no on-premises hardware required.
-
-See [`docs/CLOUDFLARE_ACCESS_OAUTH.md`](docs/CLOUDFLARE_ACCESS_OAUTH.md) for the complete setup guide.
-
-**Summary:**
-- Cloudflare Access replaces any Pi-based OATH setup
-- Supports GitHub OAuth, TOTP (OATH-compatible), and one-time email PINs
-- Zero infrastructure to maintain — fully managed via Cloudflare dashboard
-
----
-
-## 💳 Stripe Payments
-
-Stripe is integrated for product access and enterprise licensing.
-
-See [`docs/STRIPE_SETUP.md`](docs/STRIPE_SETUP.md) for setup instructions.
-
-Required secrets:
-```
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_...
-STRIPE_SECRET_KEY=sk_live_...
-```
-
----
-
-## 🌐 Infrastructure
-
-| Layer | Technology | Status |
-|-------|-----------|--------|
-| Hosting | Cloudflare Pages | ✅ Active |
-| Auth | Cloudflare Access | ✅ Active |
-| Payments | Stripe | ✅ Active |
-| CDN/DNS | Cloudflare | ✅ Active |
-| CI/CD | GitHub Actions | ✅ Active |
-
-See [`docs/API_VENDORS.md`](docs/API_VENDORS.md) for vendor API routing configuration.
-
----
-
-## 🔑 Environment Variables
-
-Copy `.env.example` and fill in your values:
-
-```bash
-cp .env.example .env.local
-```
-
-See [`.env.example`](.env.example) for all required variables.
-
----
-
-## 📊 Status
-
-🟢 **Active Development** | 🏢 **BlackRoad OS, Inc.** | 👔 **CEO: Alexa Amundson**
-
----
-
-## 📜 License
-
-**Copyright © 2026 BlackRoad OS, Inc. All Rights Reserved.**
-
-**PROPRIETARY AND CONFIDENTIAL** — Not for commercial resale.
-
-- ✅ Permitted: Testing, evaluation, educational use
-- ❌ Prohibited: Commercial use or redistribution without written permission
-
-**Contact:** blackroad.systems@gmail.com
-
-See [LICENSE](LICENSE) for complete terms.
